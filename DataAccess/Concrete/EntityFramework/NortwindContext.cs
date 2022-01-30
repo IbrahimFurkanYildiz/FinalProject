@@ -13,7 +13,7 @@ namespace DataAccess.Concrete.EntityFramework
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) // Projenin hangi DB ile bağlantı kuracağını belirtmek için kullanılır.
         {
-            optionsBuilder.UseSqlServer("Server=.;Database=Northwind;User Id=sa;Password=1234;"); // başına @ işareti koymak ters slaş işareti olduğunu anlaması için gereklidir. Normalde c# da ters slaş'ın anlamı vardır.
+            optionsBuilder.UseSqlServer("Server=.;Database=Northwind;Trusted_Connection=true"); // başına @ işareti koymak ters slaş işareti olduğunu anlaması için gereklidir. Normalde c# da ters slaş'ın anlamı vardır.
             
         }
 
