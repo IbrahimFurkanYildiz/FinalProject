@@ -1,4 +1,5 @@
-﻿using Entities.Concrete;
+﻿using Core.DataAccess;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -11,3 +12,6 @@ namespace DataAccess.Abstract
         
     }
 }
+
+//Core katmanından alınan referans ile diğer projelerede ilerleyen zamanlarda aynı kodları yazmamış olduk.
+//Code Refactoring : Kod iyileştirilmesi 
