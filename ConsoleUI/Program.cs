@@ -40,7 +40,7 @@ namespace ConsoleUI
             //    Console.WriteLine(product.ProductName);
             //}
 
-            foreach (var product in productManager.GetProductDetails())
+            foreach (var product in productManager.GetProductDetails().Data)
             {
                 Console.WriteLine(product.ProductName + @"\" + product.CategoryName);
             }
