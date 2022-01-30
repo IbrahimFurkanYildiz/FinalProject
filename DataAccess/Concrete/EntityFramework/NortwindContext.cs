@@ -20,5 +20,6 @@ namespace DataAccess.Concrete.EntityFramework
         public DbSet<Product> Products { get; set; } //DB'deki verileri c# daki nesne ile eşleştirme işlemi yapmak için kullanılmaktadır.
         public DbSet<Category> Categories{ get; set; }
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<Order> Orders { get; set; }
     }
 }
