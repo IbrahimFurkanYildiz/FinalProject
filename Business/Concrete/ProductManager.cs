@@ -36,10 +36,10 @@ namespace Business.Concrete
             //İş Kodları
             //Yetkisi var mı?
 
-            if (DateTime.Now.Hour == 22)
-            {
-                return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime); // Saat 22 ve 23 arasında ürün listelemeyi devre dışı bırakmaya örnek kod parçası
-            }
+            //if (DateTime.Now.Hour == 22)
+            //{
+            //    return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime); // Saat 22 ve 23 arasında ürün listelemeyi devre dışı bırakmaya örnek kod parçası
+            //}
 
             return new DataResult<List<Product>>(_productDal.GetAll(), true, Messages.ProductsListed);
         }
